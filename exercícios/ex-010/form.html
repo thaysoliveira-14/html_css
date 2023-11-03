@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        form {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        label, input {
+            margin: 5px;
+        }
+
+        input#submit{
+            background-color: black;
+            color: white;
+            padding: 5px; 
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>FORMULÁRIO DE CADASTRO</h1>
+    <h2>Preencha o formulário a seguir</h2>
+    <form action="cadastro.php">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+<br>
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" name="sobrenome" id="sobrenome">
+<br>
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" name="data-nascimento" id="data-nascimento">
+<br>
+        <input type="submit" value="Enviar formulário" id="submit">
+    </form>
+</body>
+</html>
