@@ -8,15 +8,23 @@
 <body>
     <form action="cadastro.php" method="get" autocomplete="on">
 
-        <p>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" autocomplete="email">
-        </p>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" autocomplete="email">
+            </p>
+            <p>
+                <label for="tel">Telefone:</label>
+                <input type="tel" name="tel" id="tel" autocomplete="tel">
+            </p>
 
-        <p>
-            <label for="tel">Telefone:</label>
-            <input type="tel" name="tel" id="tel" autocomplete="tel">
-        </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+
+        </fieldset>
 
     </form>
 </body>
