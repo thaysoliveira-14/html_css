@@ -7,16 +7,57 @@
 </head>
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php" method="get" autocomplete="on">
+    <form action="cadastro.php" method="post" autocomplete="on">
 
         <p>
-            <label for="estado">Estado</label>
-            
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+
+                <option value="" selected>-- Escolha uma opção --</option>
+
+                <optgroup label="Centro-Oeste">
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                </optgroup>
+
+                <optgroup label="Sudeste">
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="ES">Espírito Santo</option>
+                </optgroup>
+
+                <optgroup label="Sul">
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprofissao">Profissão:</label>
+            <input type="text" name="profissao" id="iprofissao" list="prof">
+            <datalist id="prof">
+                <option value="Méd">Médico</option>
+                <option value="Cam">Camioneiro</option>
+                <option value="Prof">Professor</option>
+                <option value="Dev">Desenvolvedor</option>
+            </datalist>
         </p>
 
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem:</label><br>
+            <textarea name="Mensagem" id="imsg" cols="30" rows="10">
+                
+            </textarea>
         </p>
 
     </form>
