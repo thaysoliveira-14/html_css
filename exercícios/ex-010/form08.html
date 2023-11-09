@@ -4,9 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Output</title>
+    <style>
+        div {
+            margin: 5px;
+        }
+        
+        label {
+            font-weight: bolder;
+        }
+
+        .soma {
+            background-color: rgb(48, 48, 48);
+            color: white;
+            padding: 5px;
+            border-radius: 5px;
+            width: 137px;
+            text-align: center;
+            margin: 10px 0px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.397);
+        }
+
+        .botao{
+            width: 134px;
+            text-align: center;
+        }
+
+        form {
+            margin-left: 45px;
+            width: 170px;
+            background-color: coral;
+            padding: 5px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.329);
+        }
+
+    </style>
 </head>
 <body>
     <h1>Exemplo de Output</h1>
 
+    <form action="cadastro.php" method="get">
+
+        <div id="conteiner">
+            <div>
+                <label for="in1">Número 1:</label>
+                <input type="number" name="n1" id="in1" min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </div>
+            <div>
+                <label for="in2">Número 2:</label>
+                <input type="number" name="n2" id="in2" min="0" max="50" oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+            </div>
+            <div class="soma">
+                <label for="isoma">Soma = <label>
+                <output id="isoma">0</output>
+            </div>
+            <div class="botao">
+                <input type="submit" value="Enviar" id="submit">
+                <input type="reset" value="Limpar" id="reset">
+            </div>
+        </div>
+
+    </form>
 </body>
 </html>
