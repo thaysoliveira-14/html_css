@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+/* ESTILO GERAL */
+
+/* #007ABF
+    #D8BDD2 */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #007ABF, #D8BDD2);
+    background-attachment: fixed;
+}
+
+#foto, #foto img, #login {
+    width: 70vw;
+}
+
+main {
+    position: relative;
+}
+
+section {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+
+    border: 1px solid #8f7d8b;
+    border-radius: 20px;
+
+    background-color: #007ABF;
+}
+
+#foto img {
+    border: 1px solid #D8BDD2;
+    border-radius: 20px;
+}
+
+#login {
+    text-align: center;
+}
+
+#login h1, p {
+    margin: 5px 0px;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+
+form {
+    margin: 15px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form div {
+    margin: 5px;
+}
+
+.dados-login {
+    border: 1px solid #002f4b;
+    border-radius: 10px;
+    background-color: rgb(0, 78, 122);
+    width: max-content;
+    color: white; 
+}
+
+.dados-login label {
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.dados-login input {
+    height: 37px;
+    border-radius: 10px;
+}
+
+
+#submit {
+    margin: 10px;
+}
+
+#submit input {
+    border: 1px solid #002f4b;
+    padding: 5px;
+    color: white;
+    background-color: #002f4b;
+}
+
