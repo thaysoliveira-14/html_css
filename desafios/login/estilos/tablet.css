@@ -2,11 +2,21 @@
 
 /* ESTILO TABLET */
 
-/* div#foto {
-<span class="material-symbols-outlined">
-person
-</span>
-<span class="material-symbols-outlined">
-lock
-</span> 
-*/
+section {
+    display: flex;
+    justify-content: center;
+    width: 80vw;
+    height: 50vh;
+}
+
+#foto img {
+    width: 100%;
+    height: 100%;
+}
+
+#login {
+    height: 100%;
+    margin: 5% 0px;
+}
+
+
