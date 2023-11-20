@@ -47,7 +47,7 @@ section {
 #foto {
     background: #002f4b url('../imagens/foto.jpg') no-repeat;
     background-size: cover;
-    height: 200px;
+    height: 220px;
     border: 1px solid #D8BDD2;
     border-radius: 20px;
     display: block;
@@ -62,6 +62,10 @@ section {
     color: white;
     text-shadow: 1px 1px 2px black;
     text-align: center;
+}
+
+#login > p {
+    font-size: 0.8em;
 }
 
 form {
@@ -92,17 +96,24 @@ form div {
     border-radius: 10px;
 }
 
-
 #submit {
     margin: 10px;
 }
 
 #submit input {
+    display: block;
+    width: 100%;
     border: 1px solid #002f4b;
     border-radius: 8px;
     padding: 5px;
     color: white;
     background-color: #002f4b;
     margin-top: 5px;
+    cursor: pointer;
+}
+
+#submit input:hover {
+    background-color: #7bcfff;
+    color: #002f4b;
 }
 
