@@ -1,3 +1,20 @@
 @charset "UTF-8";
 
 /* ESTILO PC */
+
+section {
+    width: 900px;
+}
+
+#foto {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+#login {
+    width: 50%;
+    height: 100%;
+    margin: 5% 0px;
+    float: right;
+}
